@@ -30,7 +30,7 @@ export default function Home() {
                       </Text>
                       <Text fontSize={'xs'} color={'white'}> Bloom is a way for you to begin your day with a positive step.</Text>
                       <Text fontSize={'xs'} color={'white'}> Enjoy health and wellness content while earning Bloomcoin (BLCN).</Text>
-                      <Button colorScheme={'green'} borderRadius={20}>Get Started</Button>
+                      <Button colorScheme={'green'} borderRadius={20} as={'a'} href={'/Homepage.js'}>Get Started</Button>
                   </VStack>
 
 
