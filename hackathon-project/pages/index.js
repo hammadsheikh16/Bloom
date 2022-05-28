@@ -36,7 +36,7 @@ export default function Home() {
 
 
               </div>
-              <Image src={landingfront} alt={'https://via.placeholder.com/150'}></Image>
+              <Image src={landingfront} alt={'https://via.placeholder.com/150'} width={'584px'} height={'548px'}></Image>
           </HStack>
 
 
