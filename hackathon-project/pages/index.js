@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div style={{height: '100vh', backgroundColor: '#71E294', width: '100vw'}}>
        <Box>
-        <HStack ml={66} mr={66} mt={43}>
+        <HStack ml={66} mr={66} pt={43}>
            <Image src={landinglogo} alt={'https://via.placeholder.com/150'} width={'200px'} height={'50px'}/>
            <Spacer width={'full'}/>
            <Button variant={'ghost'}>Login</Button>
