@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import {Box, Button, Center, HStack, Spacer, Text, VStack} from "@chakra-ui/react";
 import landinglogo from "../public/landingLogo.png";
@@ -6,17 +5,16 @@ import landingfront from "../public/landingpagefrontimage.svg"
 
 export default function Home() {
   return (
-    <html style={{backgroundColor: '#71E294'}}>
-      <Box>
+    <div style={{height: '100vh', backgroundColor: '#71E294', width: '100vw'}}>
+       <Box>
         <HStack ml={66} mr={66} mt={43}>
-          <Image src={landinglogo} alt={'https://via.placeholder.com/150'} width={'200px'} height={'50px'}/>
-          <Spacer width={'full'}/>
-          <Button variant={'ghost'}>Login</Button>
-          <Button colorScheme={'orange'}>Sign up</Button>
-        </HStack>
-      </Box>
+           <Image src={landinglogo} alt={'https://via.placeholder.com/150'} width={'200px'} height={'50px'}/>
+           <Spacer width={'full'}/>
+           <Button variant={'ghost'}>Login</Button>
+           <Button colorScheme={'orange'}>Sign up</Button>
+         </HStack>
+       </Box>
       <Center>
-
           <HStack>
               <div style={{paddingRight: '7px'}}>
                   <VStack alignItems={'flex-start'}>
@@ -24,7 +22,6 @@ export default function Home() {
                           <Text fontSize={'4xl'} fontWeight={700} color={'darkgreen'}>Bloom</Text>
                           <Text fontSize={'4xl'} fontWeight={700} color={'white'}>into your</Text>
                       </HStack>
-
                       <Text fontSize={'4xl'} fontWeight={700} color={'white'}>
                           new, improved self.
                       </Text>
@@ -36,11 +33,9 @@ export default function Home() {
 
 
               </div>
-              <Image src={landingfront} alt={'https://via.placeholder.com/150'} width={'584px'} height={'548px'}></Image>
+              <Image src={landingfront} alt={'https://via.placeholder.com/150'} width={'584px'} height={'548px'}/>
           </HStack>
-
-
       </Center>
-      </html>
+      </div>
   )
 }
