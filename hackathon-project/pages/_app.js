@@ -1,11 +1,17 @@
 import '../styles/globals.css'
-import { Box } from '@chakra-ui/react'
+import { Box, ChakraProvider } from '@chakra-ui/react'
 function MyApp({ Component, pageProps }) {
   return (
       <>
-          <Component {...pageProps} />
+
+          <ChakraProvider>
+              <html>
+                  <Component {...pageProps} />
+              </html>
+          </ChakraProvider>
       </>
-  )
+
+      )
 }
 
 export default MyApp

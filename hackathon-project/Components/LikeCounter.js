@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {HStack} from "@chakra-ui/react";
+import {Button, HStack} from "@chakra-ui/react";
 
 export default function likeCounter(){
 
@@ -12,7 +12,7 @@ export default function likeCounter(){
     return (
         <>
             <HStack>
-                <></>
+                <Button/>
             </HStack>
 
 
